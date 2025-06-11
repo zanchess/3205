@@ -4,6 +4,7 @@ import { getShortUrlInfo, deleteShortUrl, getAnalytics } from '../../api/shorten
 import { DeleteFilled } from '@ant-design/icons';
 import styles from './ShortUrlInfoForm.module.css';
 import { useShortenStore } from '../../store/shortenStore.ts';
+import { ANALYTICS_VIEW, ShortUrlKeys } from '../../constants';
 
 const { Title } = Typography;
 
@@ -66,7 +67,7 @@ export const ShortUrlInfoForm: React.FC = () => {
         <>
           <Descriptions title="Analytics:" bordered column={1} size="small" className={styles['short-url-info-form__desc']}>
             {Object.entries(info).map(([key, value]) => (
-              <Descriptions.Item label={key} key={key}>
+              <Descriptions.Item label={ANALYTICS_VIEW[`${key as ShortUrlKeys}`]} key={key}>
                 {String(value)}
               </Descriptions.Item>
             ))}
@@ -76,7 +77,7 @@ export const ShortUrlInfoForm: React.FC = () => {
               {Object.entries(analytics).map(([key, value]) => {
                 if (key !== 'clickCount') {
                   return (
-                    <Descriptions.Item label={key} key={key}>
+                    <Descriptions.Item label={ANALYTICS_VIEW[`${key as ShortUrlKeys}`]} key={key}>
                       {String(value)}
                     </Descriptions.Item>
                   );
