@@ -1,0 +1,50 @@
+.shorten-url-form {
+  width: 400px;
+  background: #fff;
+  padding: 24px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px #f0f1f2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.shorten-url-form__title {
+  margin-bottom: 16px;
+}
+
+.shorten-url-form__customize-label {
+  margin-bottom: 8px;
+  font-weight: 500;
+}
+
+.shorten-url-form__compact {
+  width: 100%;
+}
+
+.shorten-url-form__submit-item {
+  margin-top: 16px;
+}
+
+.shorten-url-form__short-url-row {
+  margin-top: 16px;
+  display: flex;
+  align-items: center;
+}
+
+.shorten-url-form__short-url-value {
+  margin-left: 8px;
+  word-break: break-all;
+}
+
+.shorten-url-form__copy-btn {
+  margin-left: 8px;
+  transition: background 0.3s, color 0.3s;
+  outline: none;
+  box-shadow: none;
+}
+
+.shorten-url-form__copy-btn.copied {
+  background: #52c41a;
+  color: #fff;
+} 

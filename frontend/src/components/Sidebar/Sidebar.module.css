@@ -1,0 +1,12 @@
+.sidebar__sider {
+  background: #001529;
+}
+
+.sidebar__menu {
+  height: 100%;
+  border-right: 0;
+}
+
+.sidebar-menu .ant-menu-item {
+  text-align: left;
+}

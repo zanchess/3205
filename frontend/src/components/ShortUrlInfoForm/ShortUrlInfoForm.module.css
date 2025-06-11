@@ -1,0 +1,27 @@
+.short-url-info-form {
+  width: 400px;
+  background: #fff;
+  padding: 24px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px #f0f1f2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.short-url-info-form__title {
+  margin-bottom: 16px;
+}
+
+.short-url-info-form__form {
+  width: 100%;
+}
+
+.short-url-info-form__desc {
+  margin-top: 16px;
+}
+
+.short-url-info-form__delete-btn {
+  margin-top: 16px;
+  margin-left: 8px;
+} 
